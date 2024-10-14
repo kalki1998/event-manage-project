@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>{% block title %}{% endblock title %}</title>
+  </head>
+  <body>
+    {% block content %}
+    <div class="container-fluid text-center">
+    <h1 class='text-dark m-3 fw-bold bg-info'>About Us</h1>
+    
+
+    <div class="container text-center my-2">
+    <img src="{% static 'images/abouttitle.jpg' %}"class="w-50" alt="about">
+    <div class="text-center my-4">
+    <h6 class="fw-italic">Welcome to <span class="fw-bold fs-5 text-danger">K&S Event Management and decorations pvt.ltd,</span> your premier destination for seamless and unforgettable event experiences. Whether you’re planning a corporate conference, a lavish wedding, or an intimate gathering, we bring your vision to life with precision and creativity.
+    Our Mission At <span class="fw-bold text-danger">K&S pvt.ltd,</span> we are dedicated to transforming your ideas into reality. Our mission is to deliver exceptional events that exceed expectations, leaving lasting impressions on you and your guests.</h6>
+    </div>
+    </div>
+    <div class="container">
+      <h6>Our Services:</h6>
+        <p><span class="fw-bold">Corporate Events:</span> From conferences to team-building activities, we ensure your corporate events are professionally managed and impactful.</p>
+        <p><span class="fw-bold">Weddings:</span> We create magical weddings that reflect your love story, making your special day truly memorable.</p>
+        <p><span class="fw-bold">Social Gatherings:</span> Be it a birthday party or a family reunion, we handle all the details so you can enjoy the moment.</p>
+    </div>
+      
+      <h6>Why Choose Us?</h6>
+      <p><span class="fw-bold">Personalized Approach:</span> We tailor our services to meet your specific needs and preferences.</p>
+      <p><span class="fw-bold">Attention to Detail:</span> Every aspect of your event is meticulously planned and executed, ensuring a flawless experience.</p>
+      
+      <div class="container-fluid">
+      <h3 class="bg-warning">Recent Events</h3>
+
+      <div class="card text-center m-3 p-2 border border-2 border-dark" style="width: 18rem; display:inline-block;">
+        <img src="{% static 'images/tmb4.jpg' %}" class="card-img-top" alt="tmb4">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card text-center m-3 p-2 border border-2 border-dark" style="width: 18rem; display:inline-block;">
+        <img src="{% static 'images/tmb5.jpg' %}" class="card-img-top" alt="tmb2">
+        <div class="card-body">
+          <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card text-center m-3 p-2 border border-2 border-dark" style="width: 18rem; display:inline-block;">
+        <img src="{% static 'images/tmb3.jpg' %}" class="card-img-top" alt="tmb3">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      </div>
+    </div>
+    </div>
+    {% endblock content %}
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
